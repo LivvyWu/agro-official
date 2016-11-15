@@ -4,14 +4,14 @@ var router = express.Router();
 
 var menus = [
     {
-        "item": "簡介(Introduction)",
+        "item": "一、簡介(Introduction)", "itemdesc" : "簡介內容",
         "subitems": []
     },
     {
-        "item": "API服務(API Service)",
+        "item": "二、API服務(API Service)",
         "subitems": [
             {
-                "name": "取得我的農場", "subsub": [
+                "name": "取得我的農場", "sub": [
                 {
                     "name": "URL描述 (URL Description)",
                     "desc": "在農業4.0共通平台建立user個人資訊。",
@@ -51,11 +51,11 @@ var menus = [
         "subitems": []
     },
     {
-        "item": "農場詳細資訊",
+        "item": "三、農場詳細資訊",
         "subitems": []
     },
     {
-        "item": "附錄",
+        "item": "四、附錄",
         "subitems": []
     }
     // {
