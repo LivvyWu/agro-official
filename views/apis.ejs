@@ -11,83 +11,92 @@
 
 
 <div class="container-fluid">
-    <div class="row main-wrapper">
-        <div class="col-md-2 wrapper-left">
-            <nav class="navbar apiNav pad45" id="myScrollspy">
-                <a class="navbar-brand" href="/">
-                    <img src="images/icons/shield.svg" width="40" height="40" class="d-inline-block" alt="">
-                    AGRO
-                </a>
-                <button class="navbar-toggler hidden-xs-up" type="button" data-toggle="collapse"
-                        data-target="#exCollapsingNavbar" aria-controls="exCollapsingNavbar" aria-expanded="false"
-                        aria-label="Toggle navigation"></button>
-                <ul class="nav" id="sidebar">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+      </span>
+    </a>
+    <div class="tocify-wrapper">
+        <nav class="navbar apiNav pad45" id="myScrollspy">
+            <a class="navbar-brand" href="/">
+                <img src="images/icons/shield.svg" width="40" height="40" class="d-inline-block" alt="">
+                AGRO
+            </a>
+            <button class="navbar-toggler hidden-xs-up" type="button" data-toggle="collapse"
+                    data-target="#exCollapsingNavbar" aria-controls="exCollapsingNavbar" aria-expanded="false"
+                    aria-label="Toggle navigation"></button>
+            <ul class="nav" id="sidebar">
 
-                    <% menus.forEach(function(menu, index1){ %>
-                    <li class="nav-item"><a class="nav-link active" href="#content<%= index1 %>"><%= menu.item %></a>
-                        <ul class="nav submenu">
-                            <% menu.subitems.forEach(function(subitem, index2){ %>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#content<%= index1 %>-<%= index2 %>"><%= subitem.name %></a>
+                <% menus.forEach(function(menu, index1){ %>
+                <li class="nav-item"><a class="nav-link active" href="#content<%= index1 %>"><%= menu.item %></a>
+                    <ul class="nav submenu">
+                        <% menu.subitems.forEach(function(subitem, index2){ %>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#content<%= index1 %>-<%= index2 %>"><%= subitem.name %></a>
+                        </li>
+                        <ul>
+                            <% subitem.sub.forEach(function(subs, index3){ %>
+                            <li><a class="nav-link"
+                                   href="#content<%= index1 %>-<%= index2 %>-<%= index3 %>"><%= subs.name %></a>
                             </li>
-                            <ul>
-                                <% subitem.sub.forEach(function(subs, index3){ %>
-                                <li><a class="nav-link"
-                                       href="#content<%= index1 %>-<%= index2 %>-<%= index3 %>"><%= subs.name %></a>
-                                </li>
-                                <% }); %>
-                            </ul>
                             <% }); %>
                         </ul>
-                    </li>
-                    <% }); %>
-                </ul>
-                <!--</div>-->
-            </nav>
-        </div>
-        <div class="col-md-10 wrapper-right scroll-box">
+                        <% }); %>
+                    </ul>
+                </li>
+                <% }); %>
+            </ul>
+            <!--</div>-->
+        </nav>
+    </div>
+    <div class="row page-wrapper">
+        <div class="page-content scroll-box">
+            <div class="dark-box"></div>
             <% menus.forEach(function(menu, index1){ %>
-            <div class="content-bg" id="content<%= index1 %>">
+
+            <div class="content" id="content<%= index1 %>">
+
+                <h1><%= menu.item %></h1>
+                <p><%= menu.desc %></p>
+
                 <% menu.subitems.forEach(function(subitem, index2){ %>
-                <div class="row content">
-                    <div class="col-ms-12 col-md-6 midOuter">
-                        <% if (index2 == 0) { %>
-                        <h2><%= menu.item %></h2>
-                        <h3><%= menu.itemdesc %></h3>
-                        <% } %>
-                        <h3 id="content<%= index1 %>-<%= index2 %>"><%= subitem.name %></h3>
-                        <% subitem.sub.forEach(function(subs, index3){ %>
+                <h2 id="content<%= index1 %>-<%= index2 %>"><%= subitem.name %></h2>
+                    <div class="row mid">
+                        <div class="col-ms-12 col-md-6 midOuter">
+                            <% subitem.sub.forEach(function(subs, index3){ %>
                             <div class="midInner">
-                                <h5 id="content<%= index1 %>-<%= index2 %>-<%= index3 %>"><%= subs.name %></h5>
-                                <p>JSON資料標籤說明：</p>
-                                <table class="table table-bordered">
-                                    <thead>
-                                    <tr>
-                                        <th>標籤</th>
-                                        <th>必填</th>
-                                        <th>說明</th>
-                                        <th>格式 / 範例</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <% tagDesc.forEach(function (tag) { %>
-                                    <tr>
-                                        <td><%= tag.tag %></td>
-                                        <td><%= tag.required %></td>
-                                        <td><%= tag.desc %></td>
-                                        <td><%= tag.format %></td>
-                                    </tr>
-                                    <% }) %>
-                                    </tbody>
-                                </table>
+                                <h3 id="content<%= index1 %>-<%= index2 %>-<%= index3 %>"><%= subs.name %></h3>
+                                <p><%= subs.content %></p>
+                                <% if (subs.dummy) { %>
+                                    <table class="table table-bordered">
+                                        <thead>
+                                        <tr>
+                                            <th>標籤</th>
+                                            <th>必填</th>
+                                            <th>說明</th>
+                                            <th>格式 / 範例</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <% tagDesc.forEach(function (tag) { %>
+                                        <tr>
+                                            <td><%= tag.tag %></td>
+                                            <td><%= tag.required %></td>
+                                            <td><%= tag.desc %></td>
+                                            <td><%= tag.format %></td>
+                                        </tr>
+                                        <% }) %>
+                                        </tbody>
+                                    </table>
+                                <% } %>
                             </div>
-                    </div>
-                    <div class="col-ms-12 col-md-6 rightOuter">
+                            <% }); %>
+                        </div>
+
+                        <div class="col-ms-12 col-md-6 rightOuter">
                             <div class="rightInner">
-                                <p>Parameters</p>
-                                <p>所有訊息必須為 UTF-8 編碼。<br>JSON資料範例：</p>
-                                <pre>
-                    <code>
+                                <h3>請求範例 (Example Request)</h3>
+                                <pre><code>
     {
         device_id : “183948633”,
         d: {
@@ -97,12 +106,23 @@
         valid_time_end : “1380657600”
     }
 
-                    </code>
-                    </pre>
+                                </code></pre>
+                                <h3>回應範例 (Example Response)</h3>
+                                <pre><code>
+    {
+        device_id : “183948633”,
+        d: {
+        type : “A01”,
+        value : “37.5”,
+        valid_time_start : “1380654000”,
+        valid_time_end : “1380657600”
+    }
+
+                                </code></pre>
                             </div>
                         </div>
-                        <% }); %>
-                </div>
+                    </div>
+
                 <% }); %>
             </div>
             <% }); %>
@@ -124,6 +144,9 @@
             $('html, body').animate({
                 scrollTop: $(this.hash).offset().top
             }, 1000);
+        });
+        $('#nav-button').on('click', function () {
+            $('.tocify-wrapper').addClass(open)
         });
     });
 

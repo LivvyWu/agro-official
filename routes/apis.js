@@ -4,58 +4,51 @@ var router = express.Router();
 
 var menus = [
     {
-        "item": "一、簡介(Introduction)", "itemdesc" : "簡介內容",
+        "item": "一、簡介", "desc": "這邊是農場Field api簡介",
         "subitems": []
     },
     {
-        "item": "二、API服務(API Service)",
+        "item": "二、API服務",
         "subitems": [
             {
                 "name": "取得我的農場", "sub": [
-                {
-                    "name": "URL描述 (URL Description)",
-                    "desc": "在農業4.0共通平台建立user個人資訊。",
-                    "http": "POST",
-                    "url": "/agri/v1/user/create/"
-                },
-                {
-                    "name": "請求參數 (Request Paramters)",
-                    "desc": "在農業4.0共通平台查詢個人資料。",
-                    "http": "POST",
-                    "url": "/agri/v1/user/create/"
-                },
-                {
-                    "name": "回應格式(JSON) (Response Object (JSON))",
-                    "desc": "在農業4.0共通平台修改個人資料。",
-                    "http": "POST",
-                    "url": "/agri/v1/user/create/"
-                },
-                {
-                    "name": "請求範例 (Example Request)",
-                    "desc": "在農業4.0共通平台刪除個人資料。",
-                    "http": "POST",
-                    "url": "/agri/v1/user/create/"
-                },
-                {
-                    "name": "回應範例 (Example Response)",
-                    "desc": "在農業4.0共通平台刪除個人資料。",
-                    "http": "POST",
-                    "url": "/agri/v1/user/create/"
-                },
+                    {
+                        "name": "URL描述",
+                        "content": "在農業4.0共通平台建立user個人資訊。\n \n GET : /agri/v1/field/list/"
+
+                    },
+                    {
+                        "name": "請求參數 ",
+                        "dummy": true
+                    },
+                    {
+                        "name": "回應格式(JSON)",
+                        "dummy": true
+                    }
+                ]
+            },
+            {
+                "name": "農場詳細資訊", "sub": [
+                    {
+                        "name": "URL描述",
+                        "content": "在農業4.0共通平台建立user個人資訊。\n \n GET : /agri/v1/field/:id/"
+                    },
+                    {
+                        "name": "請求參數",
+                        "dummy": true,
+                        "content": "/agri/v1/field/create/"
+                    },
+                    {
+                        "name": "回應格式(JSON)",
+                        "dummy": true,
+                        "content": "在農業4.0共通平台修改個人資料。"
+                    }
                 ]
             }
         ]
     },
     {
-        "item": "",
-        "subitems": []
-    },
-    {
-        "item": "三、農場詳細資訊",
-        "subitems": []
-    },
-    {
-        "item": "四、附錄",
+        "item": "三、附錄",
         "subitems": []
     }
     // {
