@@ -49,7 +49,7 @@
             <!--</div>-->
         </nav>
     </div>
-    <div class="row page-wrapper">
+    <div class="page-wrapper">
         <div class="page-content scroll-box">
             <div class="dark-box"></div>
             <% menus.forEach(function(menu, index1){ %>
@@ -61,67 +61,67 @@
 
                 <% menu.subitems.forEach(function(subitem, index2){ %>
                 <h2 id="content<%= index1 %>-<%= index2 %>"><%= subitem.name %></h2>
-                    <div class="row mid">
-                        <div class="col-ms-12 col-md-6 midOuter">
-                            <% subitem.sub.forEach(function(subs, index3){ %>
-                            <div class="midInner">
-                                <h3 id="content<%= index1 %>-<%= index2 %>-<%= index3 %>"><%= subs.name %></h3>
-                                <p><%= subs.content %></p>
-                                <% if (subs.dummy) { %>
-                                    <table class="table table-bordered">
-                                        <thead>
-                                        <tr>
-                                            <th>標籤</th>
-                                            <th>必填</th>
-                                            <th>說明</th>
-                                            <th>格式 / 範例</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <% tagDesc.forEach(function (tag) { %>
-                                        <tr>
-                                            <td><%= tag.tag %></td>
-                                            <td><%= tag.required %></td>
-                                            <td><%= tag.desc %></td>
-                                            <td><%= tag.format %></td>
-                                        </tr>
-                                        <% }) %>
-                                        </tbody>
-                                    </table>
-                                <% } %>
-                            </div>
-                            <% }); %>
+                <div class="row mid">
+                    <div class="col-ms-12 col-md-6 midOuter">
+                        <% subitem.sub.forEach(function(subs, index3){ %>
+                        <div class="midInner">
+                            <h3 id="content<%= index1 %>-<%= index2 %>-<%= index3 %>"><%= subs.name %></h3>
+                            <p><%= subs.content %></p>
+                            <% if (subs.dummy) { %>
+                            <table class="table table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>標籤</th>
+                                    <th>必填</th>
+                                    <th>說明</th>
+                                    <th>格式 / 範例</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <% tagDesc.forEach(function (tag) { %>
+                                <tr>
+                                    <td><%= tag.tag %></td>
+                                    <td><%= tag.required %></td>
+                                    <td><%= tag.desc %></td>
+                                    <td><%= tag.format %></td>
+                                </tr>
+                                <% }) %>
+                                </tbody>
+                            </table>
+                            <% } %>
                         </div>
+                        <% }); %>
+                    </div>
 
-                        <div class="col-ms-12 col-md-6 rightOuter">
-                            <div class="rightInner">
-                                <h3>請求範例 (Example Request)</h3>
-                                <pre><code>
-    {
-        device_id : “183948633”,
-        d: {
-        type : “A01”,
-        value : “37.5”,
-        valid_time_start : “1380654000”,
-        valid_time_end : “1380657600”
+                    <div class="col-ms-12 col-md-6 rightOuter">
+                        <div class="rightInner">
+                            <h3>請求範例 (Example Request)</h3>
+                            <pre><code>
+    <span>{</span>
+        <span>device_id : “183948633”,</span>
+        <span>d: {</span>
+        <span>type : “A01”,</span>
+        <span>value : “37.5”,</span>
+        <span>valid_time_start : “1380654000”,</span>
+        <span>valid_time_end : “1380657600”</span>
     }
 
                                 </code></pre>
-                                <h3>回應範例 (Example Response)</h3>
-                                <pre><code>
-    {
-        device_id : “183948633”,
-        d: {
-        type : “A01”,
-        value : “37.5”,
-        valid_time_start : “1380654000”,
-        valid_time_end : “1380657600”
-    }
+                            <h3>回應範例 (Example Response)</h3>
+                            <pre><code>
+    <span>{</span>
+        <span>device_id : “183948633”,</span>
+        <span>d: {</span>
+        <span>type : “A01”,</span>
+        <span>value : “37.5”,</span>
+        <span>valid_time_start : “1380654000”,</span>
+        <span>valid_time_end : “1380657600”</span>
+    <span>}</span>
 
                                 </code></pre>
-                            </div>
                         </div>
                     </div>
+                </div>
 
                 <% }); %>
             </div>
