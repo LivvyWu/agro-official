@@ -145,8 +145,10 @@
                 scrollTop: $(this.hash).offset().top
             }, 1000);
         });
+
         $('#nav-button').on('click', function () {
-            $('.tocify-wrapper').addClass(open)
+            $(this).toggleClass('open');
+            $('.tocify-wrapper').toggleClass('open');
         });
     });
 
