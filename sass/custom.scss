@@ -206,7 +206,7 @@ html, body {
       display: block;
     }
   }
-  #nav-button.open{
+  #nav-button.open {
     left: 230px;
   }
 
@@ -231,6 +231,10 @@ html, body {
       background-color: transparent;
       position: fixed;
       top: 0;
+      overflow-y: scroll;
+    }
+    .navbar li > a {
+      line-height: 30px;
     }
     .navbar-brand {
       float: none;
@@ -290,19 +294,23 @@ html, body {
         h3 {
           font-size: 16px;
           padding-top: 1.2em;
-          padding-bottom: 1.2em;
           font-weight: bold;
         }
         p {
           margin-top: 1em;
-          margin-bottom: 0;
-          padding-bottom: 1em;
+          margin-bottom: 1em;
         }
       }
       .mid .midOuter {
         background-color: #fff;
-        .midInner .table {
-          margin-bottom: 1.5em;
+        .midInner {
+          code.url {
+            background-color: rgba(26,188,156,.3);
+            border-radius: 3px;
+          }
+          .table {
+            margin-bottom: 1.5em;
+          }
         }
       }
       .rightOuter {
@@ -310,7 +318,9 @@ html, body {
         padding-bottom: 30px;
         padding-right: 0;
         .rightInner {
-          h3 {color: #d0d0d0};
+          h3 {
+            color: #d0d0d0;
+          }
           pre {
             color: #d0d0d0;
             code {

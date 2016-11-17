@@ -26,7 +26,6 @@
                     data-target="#exCollapsingNavbar" aria-controls="exCollapsingNavbar" aria-expanded="false"
                     aria-label="Toggle navigation"></button>
             <ul class="nav" id="sidebar">
-
                 <% menus.forEach(function(menu, index1){ %>
                 <li class="nav-item"><a class="nav-link active" href="#content<%= index1 %>"><%= menu.item %></a>
                     <ul class="nav submenu">
@@ -45,8 +44,23 @@
                     </ul>
                 </li>
                 <% }); %>
+                <li class="">
+                    <a class="" data-toggle="collapse" href="#collapseExample" aria-expanded="false"
+                       aria-controls="collapseExample">
+                        其他API服務
+                    </a>
+                </li>
             </ul>
             <!--</div>-->
+            <div class="collapse" id="collapseExample">
+                <ul class="menu-footer">
+                    <% apiRouters.forEach(function (apiRouter, i) { %>
+
+                    <li class="nav-item"><a class="nav-link" href="#"><%= apiRouter.name %></a>
+                    </li>
+                    <% }) %>
+                </ul>
+            </div>
         </nav>
     </div>
     <div class="page-wrapper">
@@ -66,9 +80,15 @@
                         <% subitem.sub.forEach(function(subs, index3){ %>
                         <div class="midInner">
                             <h3 id="content<%= index1 %>-<%= index2 %>-<%= index3 %>"><%= subs.name %></h3>
+                            <% if (index3 == 0) { %>
+
                             <p><%= subs.content %></p>
+                            <code class="url"><%= subs.http %></code>
+
+                            <% } %>
+
                             <% if (subs.dummy) { %>
-                            <table class="table table-bordered">
+                            <table class="table table-striped">
                                 <thead>
                                 <tr>
                                     <th>標籤</th>
@@ -78,14 +98,28 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <% tagDesc.forEach(function (tag) { %>
+                                <% if (subs.table == 'req') { %>
+                                <% reqtb.forEach(function (tr) { %>
                                 <tr>
-                                    <td><%= tag.tag %></td>
-                                    <td><%= tag.required %></td>
-                                    <td><%= tag.desc %></td>
-                                    <td><%= tag.format %></td>
+                                    <td><%= tr.tag %></td>
+                                    <td><%= tr.required %></td>
+                                    <td><%= tr.desc %></td>
+                                    <td><%= tr.format %></td>
                                 </tr>
                                 <% }) %>
+                                <% } %>
+
+                                <% if (subs.table == 'res') { %>
+                                <% restb.forEach(function (tr) { %>
+                                <tr>
+                                    <td><%= tr.tag %></td>
+                                    <td><%= tr.required %></td>
+                                    <td><%= tr.desc %></td>
+                                    <td><%= tr.format %></td>
+                                </tr>
+                                <% }) %>
+                                <% } %>
+
                                 </tbody>
                             </table>
                             <% } %>

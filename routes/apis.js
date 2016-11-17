@@ -11,27 +11,31 @@ var menus = [
         "item": "二、API服務",
         "subitems": [
             {
-                "name": "取得我的農場", "sub": [
+                "name": "取得農場列表", "sub": [
                     {
                         "name": "URL描述",
-                        "content": "在農業4.0共通平台建立user個人資訊。\n \n GET : /agri/v1/field/list/"
+                        "content": "在農業4.0共通平台使用Token取得使用者具權限檢視的農場列表。",
+                        "http": "GET : /agri/v1/field/list/"
 
                     },
                     {
-                        "name": "請求參數 ",
-                        "dummy": true
+                        "name": "請求參數",
+                        "dummy": true,
+                        "table": "req"
                     },
                     {
                         "name": "回應格式(JSON)",
-                        "dummy": true
+                        "dummy": true,
+                        "table": "res"
                     }
                 ]
             },
             {
-                "name": "農場詳細資訊", "sub": [
+                "name": "取得特定農場資料", "sub": [
                     {
                         "name": "URL描述",
-                        "content": "在農業4.0共通平台建立user個人資訊。\n \n GET : /agri/v1/field/:id/"
+                        "content": "在農業4.0共通平台使用農場ID取得屬於使用者自身之特定農場資料。",
+                        "http": "GET : /agri/v1/field/:id/"
                     },
                     {
                         "name": "請求參數",
@@ -51,6 +55,8 @@ var menus = [
         "item": "三、附錄",
         "subitems": []
     }
+
+
     // {
     //     "item": "使用者存取介面",
     //     "subitems": [
@@ -129,20 +135,55 @@ var menus = [
     // }
 ];
 
-var tagDesc = [
-    {"tag": "TOKEN", "required": "Y", "desc": "使用者認證", "format": "123456789"},
-    {"tag": "ACCOUNT", "required": "Y", "desc": "使用者認證", "format": "xxxxyyyy"},
-    {"tag": "PASSWORD", "required": "Y", "desc": "使用者認證", "format": "OOOXXX"},
-    {"tag": "NAME", "required": "Y", "desc": "使用者認證", "format": "王小明"},
-    {"tag": "EMAIL", "required": "Y", "desc": "使用者認證", "format": "XXXXXOOOOO@gmail.com"},
-    {"tag": "TELEPHONE", "required": "Y", "desc": "使用者認證", "format": "0912345678"},
-    {"tag": "ADDRESS", "required": "Y", "desc": "使用者認證", "format": "OO市OOOXXX路XX巷OO號"}
+var reqtb = [{"tag": "TOKEN", "required": "Y", "desc": "使用者認證", "format": "123456789"}];
+var restb = [
+    {"tag": "field_id", "required": "Y", "desc": "農場ID", "format": "123456789"},
+    {"tag": "field_name", "required": "Y", "desc": "農場名稱", "format": "埔里農場"},
+    {"tag": "field_type", "required": "Y", "desc": "農場種類", "format": "1"},
+    {"tag": "field_add", "required": "Y", "desc": "農場地址", "format": "南投縣埔里鎮東峰路180號"}
 ];
-
+var apiRouters = [
+    {
+        "key" : "field",
+        "name" : "取得我的農場"
+    },
+    {
+        "key" : "user",
+        "name" : "使用者存取介面"
+    },
+    {
+        "key" : "device",
+        "name" : "物聯網設備存取介面"
+    },
+    {
+        "key" : "plan",
+        "name" : "生產計劃存取介面"
+    },
+    {
+        "key" : "knowledge",
+        "name" : "知識庫存取介面"
+    },
+    {
+        "key" : "rule",
+        "name" : "專家建議存取介面"
+    },
+    {
+        "key" : "calendar",
+        "name" : "栽培曆存取介面"
+    },
+    {
+        "key" : "fieldActivity",
+        "name" : "田間作業存取介面"
+    },
+    {
+        "key" : "interfacing",
+        "name" : "第三方介面存取介面"
+    }
+]
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-    res.render('apis', {title: 'apis', menus: menus, tagDesc: tagDesc});
+    res.render('apis', {title: 'apis', menus: menus, apiRouters: apiRouters, reqtb: reqtb, restb: restb});
 });
 
 module.exports = router;
