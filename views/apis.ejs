@@ -83,7 +83,11 @@
                             <% if (index3 == 0) { %>
 
                             <p><%= subs.content %></p>
-                            <code class="url"><%= subs.http %></code>
+
+                            <% if (subs.http) { %>
+                                <code class="url"><%= subs.http %></code>
+                            <% } %>
+
 
                             <% } %>
 

@@ -12,48 +12,58 @@ var menus = [
         "subitems": [
             {
                 "name": "取得農場列表", "sub": [
-                    {
-                        "name": "URL描述",
-                        "content": "在農業4.0共通平台使用Token取得使用者具權限檢視的農場列表。",
-                        "http": "GET : /agri/v1/field/list/"
+                {
+                    "name": "URL描述",
+                    "content": "在農業4.0共通平台使用Token取得使用者具權限檢視的農場列表。",
+                    "http": "GET : /agri/v1/field/list/"
 
-                    },
-                    {
-                        "name": "請求參數",
-                        "dummy": true,
-                        "table": "req"
-                    },
-                    {
-                        "name": "回應格式(JSON)",
-                        "dummy": true,
-                        "table": "res"
-                    }
-                ]
+                },
+                {
+                    "name": "請求參數",
+                    "dummy": true,
+                    "table": "req"
+                },
+                {
+                    "name": "回應格式(JSON)",
+                    "dummy": true,
+                    "table": "res"
+                }
+            ]
             },
             {
                 "name": "取得特定農場資料", "sub": [
-                    {
-                        "name": "URL描述",
-                        "content": "在農業4.0共通平台使用農場ID取得屬於使用者自身之特定農場資料。",
-                        "http": "GET : /agri/v1/field/:id/"
-                    },
-                    {
-                        "name": "請求參數",
-                        "dummy": true,
-                        "content": "/agri/v1/field/create/"
-                    },
-                    {
-                        "name": "回應格式(JSON)",
-                        "dummy": true,
-                        "content": "在農業4.0共通平台修改個人資料。"
-                    }
-                ]
+                {
+                    "name": "URL描述",
+                    "content": "在農業4.0共通平台使用農場ID取得屬於使用者自身之特定農場資料。",
+                    "http": "GET : /agri/v1/field/:id/"
+                },
+                {
+                    "name": "請求參數",
+                    "dummy": true,
+                    "table": "req"
+                },
+                {
+                    "name": "回應格式(JSON)",
+                    "dummy": true,
+                    "table": "res"
+                }
+            ]
             }
         ]
     },
     {
         "item": "三、附錄",
-        "subitems": []
+        "subitems": [
+            {
+                "name": "額外的API資訊", "sub": [
+                {
+                    "content": "這邊是額外的API資訊簡介"
+
+                }
+            ]
+            }
+
+        ]
     }
 
 
@@ -143,41 +153,41 @@ var restb = [
     {"tag": "field_add", "required": "Y", "desc": "農場地址", "format": "南投縣埔里鎮東峰路180號"}
 ];
 var apiRouters = [
+    // {
+    //     "key": "field",
+    //     "name": "取得我的農場"
+    // },
     {
-        "key" : "field",
-        "name" : "取得我的農場"
+        "key": "user",
+        "name": "使用者存取介面"
     },
     {
-        "key" : "user",
-        "name" : "使用者存取介面"
+        "key": "device",
+        "name": "物聯網設備存取介面"
     },
     {
-        "key" : "device",
-        "name" : "物聯網設備存取介面"
+        "key": "plan",
+        "name": "生產計劃存取介面"
     },
     {
-        "key" : "plan",
-        "name" : "生產計劃存取介面"
+        "key": "knowledge",
+        "name": "知識庫存取介面"
     },
     {
-        "key" : "knowledge",
-        "name" : "知識庫存取介面"
+        "key": "rule",
+        "name": "專家建議存取介面"
     },
     {
-        "key" : "rule",
-        "name" : "專家建議存取介面"
+        "key": "calendar",
+        "name": "栽培曆存取介面"
     },
     {
-        "key" : "calendar",
-        "name" : "栽培曆存取介面"
+        "key": "fieldActivity",
+        "name": "田間作業存取介面"
     },
     {
-        "key" : "fieldActivity",
-        "name" : "田間作業存取介面"
-    },
-    {
-        "key" : "interfacing",
-        "name" : "第三方介面存取介面"
+        "key": "interfacing",
+        "name": "第三方介面存取介面"
     }
 ]
 
