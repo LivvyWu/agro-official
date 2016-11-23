@@ -58,14 +58,14 @@ html, body {
     }
   }
   .content-wrapper {
-    .editContent img {
-      margin-right: 10px;
-      width: 50px;
-      height: 50px;
-    }
-    p {
-      padding: 30px;
-    }
+    //.editContent img {
+    //  margin-right: 10px;
+    //  width: 50px;
+    //  height: 50px;
+    //}
+    //p {
+    //  padding: 30px;
+    //}
   }
 }
 
@@ -231,7 +231,6 @@ html, body {
       background-color: transparent;
       position: fixed;
       top: 0;
-      overflow-y: scroll;
     }
     .navbar li > a {
       line-height: 30px;
@@ -305,7 +304,7 @@ html, body {
         background-color: #fff;
         .midInner {
           code.url {
-            background-color: rgba(26,188,156,.3);
+            background-color: rgba(26, 188, 156, .3);
             border-radius: 3px;
           }
           .table {
@@ -1145,4 +1144,10 @@ body .nav-tabs > li > a {
   .checkbox.no-label, .radio.no-label {
     padding-left: 0;
   }
+}
+
+.chart {
+  display: inline-block;
+  margin-right: 0;
+  transition: all .3s ease;
 }
