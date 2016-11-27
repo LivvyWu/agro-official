@@ -52,7 +52,7 @@
                 </div>
             </div>
             <div class="hidden-sm-down col-md-6">
-                <img class="img-fluid" src="images/bigdata.svg"/>
+                <img class="wow fadeInRight img-fluid" src="images/bigdata.svg"/>
             </div>
         </div>
     </div>
@@ -60,8 +60,8 @@
     <div class="container-fluid intro bg-tan">
         <div class="row">
             <div class="hidden-sm-down col-md-6">
-                <img class="img-fluid pull-right" src="images/openapi.svg"/>
-            </div>
+                <img class="wow fadeInLeft img-fluid pull-right" src="images/openapi.svg"/>
+                </div>
             <div class="col-xs-12 col-md-6 editContent text-xs-center">
                 <div>
                     <h1 class="title text-xs-center">OPEN API</h1>
@@ -86,7 +86,7 @@
                 </div>
             </div>
             <div class="hidden-sm-down col-md-6">
-                <img class="img-fluid" src="images/valueadded2.svg"/>
+                <img class="wow fadeInRight img-fluid" src="images/valueadded2.svg"/>
             </div>
         </div>
     </div>
@@ -182,7 +182,17 @@
 <% include includejs.ejs %>
 <% include modal.ejs %>
 <script src="/plugin/parallax/parallax.js"></script>
+<script src="/plugin/wow/wow.js"></script>
+<script src="/plugin/backstretch/jquery.backstretch.min.js"></script>
 <script>
+
+    new WOW().init();
+
+    $(".main-img").backstretch([
+        "images/01.jpg",
+        "images/02.jpg",
+        "images/03.jpg"
+    ], {duration: 4000, fade: 1000});
 
 </script>
 </body>
