@@ -8,7 +8,7 @@
 <body id="developers">
 <% include nav.ejs %>
 
-<header class="wrapper">
+<header class="wrapper-bg">
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-6">
@@ -16,45 +16,45 @@
                     <h2>開發者專區</h2>
                 </div>
                 <div class="editContent">
-                    <p class="lead text-inverse">透過 REST(Representational State Transfer) API 的方式提供分析產生的各種專家建議、環境資訊、物聯網資訊等等，讓各種資訊系統利用資料進行開發研究。</p>
-                    <p class="lead text-inverse">可使用 Swagger 線上測試工具</p>
+                    <p class="text-inverse">透過 REST(Representational State Transfer) API
+                        的方式提供分析產生的各種專家建議、環境資訊、物聯網資訊等等，讓各種資訊系統利用資料進行開發研究。</p>
+                    <p class="text-inverse">可使用 Swagger 線上測試工具</p>
                 </div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <a href="http://swagger.io/" class="btn btn-default btn-default d-inline-block"><span
-                                    class="fa fa-file-text"></span>Swagger測試</a>
-                        <a href="/apis" class="btn btn-primary d-inline-block"><span
-                                    class="fa fa-code">開發技術文件</span></a>
-                    </div>
+                <div class="col-xs-12">
+                    <a href="http://swagger.io/" class="btn btn-default btn-default d-inline-block"><span
+                                class="fa fa-file-text"></span>Swagger測試</a>
+                    <a href="/apis" class="btn btn-primary d-inline-block"><span
+                                class="fa fa-code">開發技術文件</span></a>
                 </div>
             </div>
             <div class="col-sm-6">
-                <img class="img-rounded img-fluid hidden-md-down" src="http://placehold.it/450x300">
+                <img class="img-fluid dashboard" src="images/code.svg" width="400">
             </div>
         </div>
     </div>
 </header>
-<div class="content-block pad45">
+<section class="wrapper">
     <div class="container">
-        <div class="underlined-title">
+        <div class="row">
             <div class="editContent">
-                <h1>Swagger簡介</h1>
+                <h1 class="title text-xs-center">Swagger簡介</h1>
+                <hr>
             </div>
-            <hr>
             <div class="editContent">
-                <h2>Swagger是一套由HTML+Javascript撰寫的REST API文件的框架從本平台的測試業頁可了解到Swagger不僅僅提供API的規格資訊，也提供互動介面讓開發者可以直接輸入參數進行測試。</h2>
+                <h4 class="swagger">Swagger是一套由HTML+Javascript撰寫的REST
+                    API文件的框架從本平台的測試業頁可了解到Swagger不僅僅提供API的規格資訊，也提供互動介面讓開發者可以直接輸入參數進行測試。</h4>
             </div>
         </div>
     </div>
-</div>
+</section>
 
-<div class="bg-clouds pad45">
+<section class="wrapper bg-clouds">
     <div class="container">
-        <div class="underlined-title">
+        <div class="row">
             <div class="editContent">
-                <h1>開發技術文件</h1>
+                <h1 class="title text-xs-center">開發技術文件</h1>
+                <hr>
             </div>
-            <hr>
             <div class="editContent">
                 <h2></h2>
             </div>
@@ -99,7 +99,7 @@
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
         <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 pad25">
                 <div class="api-intro">
@@ -185,7 +185,7 @@
         <div class="row">
         </div>
     </div>
-</div>
+</section>
 <% include footer.ejs %>
 <% include modal.ejs %>
 <% include includejs.ejs %>
