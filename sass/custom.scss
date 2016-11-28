@@ -327,7 +327,11 @@ ul {
 
 #developers {
   position: relative;
+<<<<<<< HEAD
   .doc {
+=======
+  .api-info {
+>>>>>>> origin/master
     padding-bottom: 30px;
   }
   .wrapper-bg {
@@ -355,6 +359,11 @@ ul {
 
   .editContent {
     padding: 0px 15px;
+    h1 {
+      padding-top: 30px;
+      margin-top: 0px;
+      min-height: 200px;
+    }
     h3, h4 {
       padding-top: 15px;
       line-height: 40px;
@@ -370,6 +379,7 @@ ul {
     border-radius: 5px;
     padding: 10px 10px;
     background: #fff;
+<<<<<<< HEAD
     min-height: 200px;
   }
   &:hover {
@@ -377,6 +387,18 @@ ul {
     transform: translateY(-3px);
     //box-shadow: 0 18px 35px rgba(50, 50, 93, 0.1), 0 8px 15px rgba(0, 0, 0, 0.07);
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.1), inset 0 3px 0 0 #1abc9c;
+=======
+    min-height: 180px;
+    &:hover {
+      transition: .2s ease-in-out;
+      transform: translateY(-3px);
+      //box-shadow: 0 18px 35px rgba(50, 50, 93, 0.1), 0 8px 15px rgba(0, 0, 0, 0.07);
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.1), inset 0 3px 0 0 #1abc9c;
+    }
+    @media (max-width: 1200px) {
+      min-height: 200px;
+    }
+>>>>>>> origin/master
   }
 }
 

@@ -342,17 +342,29 @@ ul {
 #developers {
   position: relative;
 }
+<<<<<<< HEAD
 /* line 330, ../../sass/custom.scss */
 #developers .doc {
   padding-bottom: 30px;
 }
 /* line 333, ../../sass/custom.scss */
+=======
+/* line 259, ../../sass/custom.scss */
+#developers .api-info {
+  padding-bottom: 30px;
+}
+/* line 262, ../../sass/custom.scss */
+>>>>>>> origin/master
 #developers .wrapper-bg {
   padding-top: 120px;
   padding-bottom: 20px;
   background-color: #3d566E;
 }
+<<<<<<< HEAD
 /* line 337, ../../sass/custom.scss */
+=======
+/* line 266, ../../sass/custom.scss */
+>>>>>>> origin/master
 #developers .wrapper-bg:before {
   position: absolute;
   content: '';
@@ -366,42 +378,85 @@ ul {
   background: -webkit-linear-gradient(-60deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
   background: linear-gradient(150deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
 }
+<<<<<<< HEAD
 /* line 350, ../../sass/custom.scss */
+=======
+/* line 279, ../../sass/custom.scss */
+>>>>>>> origin/master
 #developers .wrapper-bg h2 {
   color: #FFFFFF;
   font-weight: 300;
 }
+<<<<<<< HEAD
 /* line 356, ../../sass/custom.scss */
 #developers .editContent {
   padding: 0px 15px;
 }
 /* line 358, ../../sass/custom.scss */
+=======
+/* line 285, ../../sass/custom.scss */
+#developers .editContent {
+  padding: 0px 15px;
+}
+/* line 287, ../../sass/custom.scss */
+#developers .editContent h1 {
+  padding-top: 30px;
+  margin-top: 0px;
+  min-height: 200px;
+}
+/* line 292, ../../sass/custom.scss */
+>>>>>>> origin/master
 #developers .editContent h3, #developers .editContent h4 {
   padding-top: 15px;
   line-height: 40px;
 }
+<<<<<<< HEAD
 /* line 362, ../../sass/custom.scss */
+=======
+/* line 296, ../../sass/custom.scss */
+>>>>>>> origin/master
 #developers .editContent hr {
   width: 10%;
   border-width: 2px;
   border-color: #16a085;
 }
+<<<<<<< HEAD
 /* line 368, ../../sass/custom.scss */
+=======
+/* line 302, ../../sass/custom.scss */
+>>>>>>> origin/master
 #developers .api-intro {
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.07), 0 7px 17px 0 rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   padding: 10px 10px;
   background: #fff;
+<<<<<<< HEAD
   min-height: 200px;
 }
 /* line 375, ../../sass/custom.scss */
 #developers:hover {
+=======
+  min-height: 180px;
+}
+/* line 308, ../../sass/custom.scss */
+#developers .api-intro:hover {
+>>>>>>> origin/master
   transition: .2s ease-in-out;
   transform: translateY(-3px);
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.1), inset 0 3px 0 0 #1abc9c;
 }
+@media (max-width: 1200px) {
+  /* line 302, ../../sass/custom.scss */
+  #developers .api-intro {
+    min-height: 200px;
+  }
+}
 
+<<<<<<< HEAD
 /* line 385, ../../sass/custom.scss */
+=======
+/* line 322, ../../sass/custom.scss */
+>>>>>>> origin/master
 #apis #nav-button {
   padding: 0 1.5em 5em 0;
   display: none;
@@ -417,16 +472,28 @@ ul {
   transition: left 0.3s ease-in-out;
 }
 @media (max-width: 930px) {
+<<<<<<< HEAD
   /* line 385, ../../sass/custom.scss */
+=======
+  /* line 322, ../../sass/custom.scss */
+>>>>>>> origin/master
   #apis #nav-button {
     display: block;
   }
 }
+<<<<<<< HEAD
 /* line 402, ../../sass/custom.scss */
 #apis #nav-button.open {
   left: 230px;
 }
 /* line 406, ../../sass/custom.scss */
+=======
+/* line 339, ../../sass/custom.scss */
+#apis #nav-button.open {
+  left: 230px;
+}
+/* line 343, ../../sass/custom.scss */
+>>>>>>> origin/master
 #apis .tocify-wrapper {
   transition: left 0.3s ease-in-out;
   overflow-y: auto;
@@ -443,32 +510,56 @@ ul {
   border-right: 1px solid #d8e1e4;
 }
 @media (max-width: 960px) {
+<<<<<<< HEAD
   /* line 406, ../../sass/custom.scss */
+=======
+  /* line 343, ../../sass/custom.scss */
+>>>>>>> origin/master
   #apis .tocify-wrapper {
     left: -230px;
   }
 }
+<<<<<<< HEAD
 /* line 423, ../../sass/custom.scss */
+=======
+/* line 360, ../../sass/custom.scss */
+>>>>>>> origin/master
 #apis .tocify-wrapper .apiNav {
   background-color: transparent;
   position: fixed;
   top: 0;
 }
+<<<<<<< HEAD
 /* line 428, ../../sass/custom.scss */
 #apis .tocify-wrapper .navbar li > a {
   line-height: 30px;
 }
 /* line 431, ../../sass/custom.scss */
+=======
+/* line 365, ../../sass/custom.scss */
+#apis .tocify-wrapper .navbar li > a {
+  line-height: 30px;
+}
+/* line 368, ../../sass/custom.scss */
+>>>>>>> origin/master
 #apis .tocify-wrapper .navbar-brand {
   float: none;
   padding: 0;
   margin: 0;
 }
+<<<<<<< HEAD
 /* line 438, ../../sass/custom.scss */
 #apis .tocify-wrapper.open {
   left: 0;
 }
 /* line 441, ../../sass/custom.scss */
+=======
+/* line 375, ../../sass/custom.scss */
+#apis .tocify-wrapper.open {
+  left: 0;
+}
+/* line 378, ../../sass/custom.scss */
+>>>>>>> origin/master
 #apis .page-wrapper {
   background-color: #ecf0f1;
   margin-left: 230px;
@@ -476,17 +567,29 @@ ul {
   z-index: 0;
 }
 @media (max-width: 960px) {
+<<<<<<< HEAD
   /* line 441, ../../sass/custom.scss */
+=======
+  /* line 378, ../../sass/custom.scss */
+>>>>>>> origin/master
   #apis .page-wrapper {
     margin-left: 0;
   }
 }
+<<<<<<< HEAD
 /* line 449, ../../sass/custom.scss */
+=======
+/* line 386, ../../sass/custom.scss */
+>>>>>>> origin/master
 #apis .page-wrapper .page-content {
   position: relative;
   z-index: 30;
 }
+<<<<<<< HEAD
 /* line 452, ../../sass/custom.scss */
+=======
+/* line 389, ../../sass/custom.scss */
+>>>>>>> origin/master
 #apis .page-wrapper .page-content .dark-box {
   width: 50%;
   background-color: #3f3f3f;
@@ -496,30 +599,50 @@ ul {
   bottom: 0;
 }
 @media (max-width: 768px) {
+<<<<<<< HEAD
   /* line 461, ../../sass/custom.scss */
+=======
+  /* line 398, ../../sass/custom.scss */
+>>>>>>> origin/master
   #apis .page-wrapper .page-content .dark-box {
     display: none;
   }
 }
+<<<<<<< HEAD
 /* line 465, ../../sass/custom.scss */
+=======
+/* line 402, ../../sass/custom.scss */
+>>>>>>> origin/master
 #apis .page-wrapper .page-content .content {
   background-color: #fff;
   margin-left: 0;
   margin-right: 0;
   border-bottom: 1px solid #d0d0d0;
 }
+<<<<<<< HEAD
 /* line 466, ../../sass/custom.scss */
+=======
+/* line 403, ../../sass/custom.scss */
+>>>>>>> origin/master
 #apis .page-wrapper .page-content .content .row.mid {
   margin-left: 0;
   margin-right: 0;
 }
+<<<<<<< HEAD
 /* line 474, ../../sass/custom.scss */
+=======
+/* line 411, ../../sass/custom.scss */
+>>>>>>> origin/master
 #apis .page-wrapper .page-content .content h1 {
   font-size: 30px;
   padding-top: 1.2em;
   margin-bottom: 0;
 }
+<<<<<<< HEAD
 /* line 479, ../../sass/custom.scss */
+=======
+/* line 416, ../../sass/custom.scss */
+>>>>>>> origin/master
 #apis .page-wrapper .page-content .content h2 {
   font-size: 20px;
   margin-bottom: 0;
@@ -527,36 +650,61 @@ ul {
   padding-bottom: 1.2em;
   font-weight: bold;
 }
+<<<<<<< HEAD
 /* line 486, ../../sass/custom.scss */
+=======
+/* line 423, ../../sass/custom.scss */
+>>>>>>> origin/master
 #apis .page-wrapper .page-content .content h3 {
   font-size: 16px;
   padding-top: 1.2em;
   font-weight: bold;
 }
+<<<<<<< HEAD
 /* line 491, ../../sass/custom.scss */
+=======
+/* line 428, ../../sass/custom.scss */
+>>>>>>> origin/master
 #apis .page-wrapper .page-content .content p {
   margin-top: 1em;
   margin-bottom: 1em;
 }
+<<<<<<< HEAD
 /* line 496, ../../sass/custom.scss */
 #apis .page-wrapper .page-content .mid .midOuter {
   background-color: #fff;
 }
 /* line 499, ../../sass/custom.scss */
+=======
+/* line 433, ../../sass/custom.scss */
+#apis .page-wrapper .page-content .mid .midOuter {
+  background-color: #fff;
+}
+/* line 436, ../../sass/custom.scss */
+>>>>>>> origin/master
 #apis .page-wrapper .page-content .mid .midOuter .midInner code.url {
   background-color: rgba(26, 188, 156, 0.3);
   border-radius: 3px;
 }
+<<<<<<< HEAD
 /* line 503, ../../sass/custom.scss */
 #apis .page-wrapper .page-content .mid .midOuter .midInner .table {
   margin-bottom: 1.5em;
 }
 /* line 508, ../../sass/custom.scss */
+=======
+/* line 440, ../../sass/custom.scss */
+#apis .page-wrapper .page-content .mid .midOuter .midInner .table {
+  margin-bottom: 1.5em;
+}
+/* line 445, ../../sass/custom.scss */
+>>>>>>> origin/master
 #apis .page-wrapper .page-content .rightOuter {
   background-color: #3f3f3f;
   padding-bottom: 30px;
   padding-right: 0;
 }
+<<<<<<< HEAD
 /* line 513, ../../sass/custom.scss */
 #apis .page-wrapper .page-content .rightOuter .rightInner h3 {
   color: #d0d0d0;
@@ -566,53 +714,100 @@ ul {
   color: #d0d0d0;
 }
 /* line 518, ../../sass/custom.scss */
+=======
+/* line 450, ../../sass/custom.scss */
+#apis .page-wrapper .page-content .rightOuter .rightInner h3 {
+  color: #d0d0d0;
+}
+/* line 453, ../../sass/custom.scss */
+#apis .page-wrapper .page-content .rightOuter .rightInner pre {
+  color: #d0d0d0;
+}
+/* line 455, ../../sass/custom.scss */
+>>>>>>> origin/master
 #apis .page-wrapper .page-content .rightOuter .rightInner pre code {
   font-size: 15px;
 }
 
+<<<<<<< HEAD
 /* line 530, ../../sass/custom.scss */
+=======
+/* line 467, ../../sass/custom.scss */
+>>>>>>> origin/master
 pre {
   background-color: #111;
   border-radius: 5px;
   margin-right: 15px;
 }
 
+<<<<<<< HEAD
 /* line 536, ../../sass/custom.scss */
+=======
+/* line 473, ../../sass/custom.scss */
+>>>>>>> origin/master
 .nav-link {
   display: inline;
 }
 
+<<<<<<< HEAD
 /* line 541, ../../sass/custom.scss */
+=======
+/* line 478, ../../sass/custom.scss */
+>>>>>>> origin/master
 #sidebar > li > a.active {
   font-weight: bold;
   color: #16a085;
 }
+<<<<<<< HEAD
 /* line 544, ../../sass/custom.scss */
+=======
+/* line 481, ../../sass/custom.scss */
+>>>>>>> origin/master
 #sidebar > li > a.active + ul.submenu {
   display: block;
   padding-left: 20px;
 }
+<<<<<<< HEAD
 /* line 549, ../../sass/custom.scss */
+=======
+/* line 486, ../../sass/custom.scss */
+>>>>>>> origin/master
 #sidebar .submenu {
   display: none;
 }
 
+<<<<<<< HEAD
 /* line 554, ../../sass/custom.scss */
+=======
+/* line 491, ../../sass/custom.scss */
+>>>>>>> origin/master
 .open.active {
   display: block;
 }
 
+<<<<<<< HEAD
 /* line 558, ../../sass/custom.scss */
+=======
+/* line 495, ../../sass/custom.scss */
+>>>>>>> origin/master
 .table th, .table td {
   padding: 5px;
 }
 
+<<<<<<< HEAD
 /* line 565, ../../sass/custom.scss */
+=======
+/* line 502, ../../sass/custom.scss */
+>>>>>>> origin/master
 .footer .site-nav ul > li, .footer .site-nav p {
   color: #bdc3c7;
   line-height: 20px;
 }
+<<<<<<< HEAD
 /* line 569, ../../sass/custom.scss */
+=======
+/* line 506, ../../sass/custom.scss */
+>>>>>>> origin/master
 .footer .site-nav .title {
   color: #fff;
   font-size: 16px;
@@ -620,220 +815,388 @@ pre {
 }
 
 /* BACKGROUND COLORS */
+<<<<<<< HEAD
 /* line 578, ../../sass/custom.scss */
+=======
+/* line 515, ../../sass/custom.scss */
+>>>>>>> origin/master
 .bg-black {
   background-color: #111111 !important;
 }
 
+<<<<<<< HEAD
 /* line 582, ../../sass/custom.scss */
+=======
+/* line 519, ../../sass/custom.scss */
+>>>>>>> origin/master
 .bg-white {
   background-color: #FFFFFF !important;
 }
 
+<<<<<<< HEAD
 /* line 586, ../../sass/custom.scss */
+=======
+/* line 523, ../../sass/custom.scss */
+>>>>>>> origin/master
 .bg-offwhite {
   background-color: #F5F5F5 !important;
 }
 
+<<<<<<< HEAD
 /* line 590, ../../sass/custom.scss */
+=======
+/* line 527, ../../sass/custom.scss */
+>>>>>>> origin/master
 .bg-clouds {
   background-color: #ECF0F1 !important;
 }
 
+<<<<<<< HEAD
 /* line 594, ../../sass/custom.scss */
+=======
+/* line 531, ../../sass/custom.scss */
+>>>>>>> origin/master
 .bg-silver {
   background-color: #BDC3C7 !important;
 }
 
+<<<<<<< HEAD
 /* line 598, ../../sass/custom.scss */
+=======
+/* line 535, ../../sass/custom.scss */
+>>>>>>> origin/master
 .bg-concrete {
   background-color: #95A5A6 !important;
 }
 
+<<<<<<< HEAD
 /* line 602, ../../sass/custom.scss */
+=======
+/* line 539, ../../sass/custom.scss */
+>>>>>>> origin/master
 .bg-asbestos {
   background-color: #7F8C8d !important;
 }
 
+<<<<<<< HEAD
 /* line 606, ../../sass/custom.scss */
+=======
+/* line 543, ../../sass/custom.scss */
+>>>>>>> origin/master
 .bg-tan {
   background-color: #D1DBBD !important;
 }
 
+<<<<<<< HEAD
 /* line 610, ../../sass/custom.scss */
+=======
+/* line 547, ../../sass/custom.scss */
+>>>>>>> origin/master
 .bg-pewter {
   background-color: #91AA9D !important;
 }
 
+<<<<<<< HEAD
 /* line 614, ../../sass/custom.scss */
+=======
+/* line 551, ../../sass/custom.scss */
+>>>>>>> origin/master
 .bg-moonlight {
   background-color: #3E606F !important;
 }
 
+<<<<<<< HEAD
 /* line 618, ../../sass/custom.scss */
+=======
+/* line 555, ../../sass/custom.scss */
+>>>>>>> origin/master
 .bg-deepocean {
   background-color: #193441 !important;
 }
 
+<<<<<<< HEAD
 /* line 622, ../../sass/custom.scss */
+=======
+/* line 559, ../../sass/custom.scss */
+>>>>>>> origin/master
 .bg-turquoise {
   background-color: #1ABC9C !important;
 }
 
+<<<<<<< HEAD
 /* line 626, ../../sass/custom.scss */
+=======
+/* line 563, ../../sass/custom.scss */
+>>>>>>> origin/master
 .bg-aqua {
   background-color: #16A085 !important;
 }
 
+<<<<<<< HEAD
 /* line 630, ../../sass/custom.scss */
+=======
+/* line 567, ../../sass/custom.scss */
+>>>>>>> origin/master
 .bg-sunflower {
   background-color: #F1C40F !important;
 }
 
+<<<<<<< HEAD
 /* line 634, ../../sass/custom.scss */
+=======
+/* line 571, ../../sass/custom.scss */
+>>>>>>> origin/master
 .bg-orange {
   background-color: #F39C12 !important;
 }
 
+<<<<<<< HEAD
 /* line 638, ../../sass/custom.scss */
+=======
+/* line 575, ../../sass/custom.scss */
+>>>>>>> origin/master
 .bg-sienna {
   background-color: #BF4E19 !important;
 }
 
+<<<<<<< HEAD
 /* line 642, ../../sass/custom.scss */
+=======
+/* line 579, ../../sass/custom.scss */
+>>>>>>> origin/master
 .bg-milanored {
   background-color: #AC1C00 !important;
 }
 
+<<<<<<< HEAD
 /* line 646, ../../sass/custom.scss */
+=======
+/* line 583, ../../sass/custom.scss */
+>>>>>>> origin/master
 .bg-river {
   background-color: #3498DB !important;
 }
 
+<<<<<<< HEAD
 /* line 650, ../../sass/custom.scss */
+=======
+/* line 587, ../../sass/custom.scss */
+>>>>>>> origin/master
 .bg-marina {
   background-color: #2980B9 !important;
 }
 
+<<<<<<< HEAD
 /* line 654, ../../sass/custom.scss */
+=======
+/* line 591, ../../sass/custom.scss */
+>>>>>>> origin/master
 .bg-deco {
   background-color: #C9D787 !important;
 }
 
+<<<<<<< HEAD
 /* line 658, ../../sass/custom.scss */
+=======
+/* line 595, ../../sass/custom.scss */
+>>>>>>> origin/master
 .bg-crete {
   background-color: #7D8A2E !important;
 }
 
+<<<<<<< HEAD
 /* line 662, ../../sass/custom.scss */
+=======
+/* line 599, ../../sass/custom.scss */
+>>>>>>> origin/master
 .bg-guardsman {
   background-color: #D90000 !important;
 }
 
+<<<<<<< HEAD
 /* line 666, ../../sass/custom.scss */
+=======
+/* line 603, ../../sass/custom.scss */
+>>>>>>> origin/master
 .bg-pomegranate {
   background-color: #C0392B !important;
 }
 
+<<<<<<< HEAD
 /* line 670, ../../sass/custom.scss */
+=======
+/* line 607, ../../sass/custom.scss */
+>>>>>>> origin/master
 .bg-finn {
   background-color: #723147 !important;
 }
 
+<<<<<<< HEAD
 /* line 674, ../../sass/custom.scss */
+=======
+/* line 611, ../../sass/custom.scss */
+>>>>>>> origin/master
 .bg-tamarind {
   background-color: #31152B !important;
 }
 
 /* PADDING, MARGIN & ALIGNMENT */
+<<<<<<< HEAD
 /* line 679, ../../sass/custom.scss */
+=======
+/* line 616, ../../sass/custom.scss */
+>>>>>>> origin/master
 .pad5 {
   padding-top: 5px;
 }
 
+<<<<<<< HEAD
 /* line 683, ../../sass/custom.scss */
+=======
+/* line 620, ../../sass/custom.scss */
+>>>>>>> origin/master
 .pad10 {
   padding-top: 10px;
 }
 
+<<<<<<< HEAD
 /* line 687, ../../sass/custom.scss */
+=======
+/* line 624, ../../sass/custom.scss */
+>>>>>>> origin/master
 .pad15 {
   padding-top: 15px;
 }
 
+<<<<<<< HEAD
 /* line 691, ../../sass/custom.scss */
+=======
+/* line 628, ../../sass/custom.scss */
+>>>>>>> origin/master
 .pad25 {
   padding-top: 25px;
 }
 
+<<<<<<< HEAD
 /* line 695, ../../sass/custom.scss */
+=======
+/* line 632, ../../sass/custom.scss */
+>>>>>>> origin/master
 .pad30 {
   padding-top: 30px;
 }
 
+<<<<<<< HEAD
 /* line 699, ../../sass/custom.scss */
+=======
+/* line 636, ../../sass/custom.scss */
+>>>>>>> origin/master
 .pad45 {
   padding-top: 45px;
 }
 
+<<<<<<< HEAD
 /* line 703, ../../sass/custom.scss */
+=======
+/* line 640, ../../sass/custom.scss */
+>>>>>>> origin/master
 .pad60 {
   padding-top: 60px;
 }
 
+<<<<<<< HEAD
 /* line 707, ../../sass/custom.scss */
+=======
+/* line 644, ../../sass/custom.scss */
+>>>>>>> origin/master
 .pad90 {
   padding-top: 90px;
 }
 
 /** TYPOGRAPHY **/
+<<<<<<< HEAD
 /* line 713, ../../sass/custom.scss */
+=======
+/* line 650, ../../sass/custom.scss */
+>>>>>>> origin/master
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: 'Lato', Helvetica, Arial, sans-serif;
   line-height: 1.1;
   color: #515157;
 }
 
+<<<<<<< HEAD
 /* line 719, ../../sass/custom.scss */
+=======
+/* line 656, ../../sass/custom.scss */
+>>>>>>> origin/master
 h1, h2, h3 {
   margin-bottom: 20px;
   font-weight: 300;
 }
 
+<<<<<<< HEAD
 /* line 724, ../../sass/custom.scss */
+=======
+/* line 661, ../../sass/custom.scss */
+>>>>>>> origin/master
 h4, h5, h6 {
   margin-bottom: 15px;
   font-weight: 400;
 }
 
+<<<<<<< HEAD
 /* line 729, ../../sass/custom.scss */
+=======
+/* line 666, ../../sass/custom.scss */
+>>>>>>> origin/master
 h1 {
   font-size: 34px;
   line-height: 54px;
 }
 
+<<<<<<< HEAD
 /* line 734, ../../sass/custom.scss */
+=======
+/* line 671, ../../sass/custom.scss */
+>>>>>>> origin/master
 h2 {
   font-size: 30px;
 }
 
+<<<<<<< HEAD
 /* line 738, ../../sass/custom.scss */
+=======
+/* line 675, ../../sass/custom.scss */
+>>>>>>> origin/master
 h3 {
   font-size: 26px;
 }
 
+<<<<<<< HEAD
 /* line 742, ../../sass/custom.scss */
+=======
+/* line 679, ../../sass/custom.scss */
+>>>>>>> origin/master
 h4 {
   font-size: 22px;
 }
 
+<<<<<<< HEAD
 /* line 746, ../../sass/custom.scss */
+=======
+/* line 683, ../../sass/custom.scss */
+>>>>>>> origin/master
 h5 {
   font-size: 18px;
 }
 
 /* TITLES */
+<<<<<<< HEAD
 /* line 752, ../../sass/custom.scss */
+=======
+/* line 689, ../../sass/custom.scss */
+>>>>>>> origin/master
 .btn {
   color: #FFF;
   padding: 10px 20px;
@@ -850,19 +1213,31 @@ h5 {
   -moz-border-radius: 4px;
 }
 
+<<<<<<< HEAD
 /* line 768, ../../sass/custom.scss */
+=======
+/* line 705, ../../sass/custom.scss */
+>>>>>>> origin/master
 .btn-sm {
   padding: 7px 13px;
   font-size: 12px;
 }
 
+<<<<<<< HEAD
 /* line 773, ../../sass/custom.scss */
+=======
+/* line 710, ../../sass/custom.scss */
+>>>>>>> origin/master
 .btn-lg {
   padding: 16px 26px;
   font-size: 16px;
 }
 
+<<<<<<< HEAD
 /* line 778, ../../sass/custom.scss */
+=======
+/* line 715, ../../sass/custom.scss */
+>>>>>>> origin/master
 .btn-xl {
   padding: 18px 30px;
   font-size: 24px;
@@ -870,85 +1245,153 @@ h5 {
   border-radius: 6px;
 }
 
+<<<<<<< HEAD
 /* line 785, ../../sass/custom.scss */
+=======
+/* line 722, ../../sass/custom.scss */
+>>>>>>> origin/master
 h1 .btn, h2 .btn, h3 .btn, h4 .btn, p .btn {
   margin-left: 15px;
 }
 
 /* Button DISABLED */
+<<<<<<< HEAD
 /* line 791, ../../sass/custom.scss */
+=======
+/* line 728, ../../sass/custom.scss */
+>>>>>>> origin/master
 .disabled a {
   cursor: not-allowed;
 }
 
 /* Button DEFAULT */
+<<<<<<< HEAD
 /* line 798, ../../sass/custom.scss */
+=======
+/* line 735, ../../sass/custom.scss */
+>>>>>>> origin/master
 .btn.btn-default {
   background: #ecf0f1;
   box-shadow: 0 2px #bdc3c7;
   color: #999;
 }
+<<<<<<< HEAD
 /* line 802, ../../sass/custom.scss */
 .btn.btn-default:hover {
   background: #bdc3c7;
 }
 /* line 806, ../../sass/custom.scss */
+=======
+/* line 739, ../../sass/custom.scss */
+.btn.btn-default:hover {
+  background: #bdc3c7;
+}
+/* line 743, ../../sass/custom.scss */
+>>>>>>> origin/master
 .btn.btn-primary {
   background: #1abc9c;
   box-shadow: 0 2px #16a085;
 }
+<<<<<<< HEAD
 /* line 809, ../../sass/custom.scss */
 .btn.btn-primary:hover {
   background: #16a085;
 }
 /* line 813, ../../sass/custom.scss */
+=======
+/* line 746, ../../sass/custom.scss */
+.btn.btn-primary:hover {
+  background: #16a085;
+}
+/* line 750, ../../sass/custom.scss */
+>>>>>>> origin/master
 .btn.btn-warning {
   background: #f1c40f;
   box-shadow: 0 2px #f39c12;
 }
+<<<<<<< HEAD
 /* line 816, ../../sass/custom.scss */
 .btn.btn-warning:hover {
   background: #f39c12;
 }
 /* line 820, ../../sass/custom.scss */
+=======
+/* line 753, ../../sass/custom.scss */
+.btn.btn-warning:hover {
+  background: #f39c12;
+}
+/* line 757, ../../sass/custom.scss */
+>>>>>>> origin/master
 .btn.btn-danger {
   background: #e74c3c;
   box-shadow: 0 2px #c0392b;
 }
+<<<<<<< HEAD
 /* line 823, ../../sass/custom.scss */
 .btn.btn-danger:hover {
   background: #c0392b;
 }
 /* line 827, ../../sass/custom.scss */
+=======
+/* line 760, ../../sass/custom.scss */
+.btn.btn-danger:hover {
+  background: #c0392b;
+}
+/* line 764, ../../sass/custom.scss */
+>>>>>>> origin/master
 .btn.btn-success {
   background: #2ecc71;
   box-shadow: 0 2px #27ae60;
 }
+<<<<<<< HEAD
 /* line 830, ../../sass/custom.scss */
 .btn.btn-success:hover {
   background: #27ae60;
 }
 /* line 834, ../../sass/custom.scss */
+=======
+/* line 767, ../../sass/custom.scss */
+.btn.btn-success:hover {
+  background: #27ae60;
+}
+/* line 771, ../../sass/custom.scss */
+>>>>>>> origin/master
 .btn.btn-dark {
   background: #34495e;
   box-shadow: 0 2px #2c3e50;
   color: #ffffff;
 }
+<<<<<<< HEAD
 /* line 838, ../../sass/custom.scss */
 .btn.btn-dark:hover {
   background: #2c3e50;
 }
 /* line 842, ../../sass/custom.scss */
+=======
+/* line 775, ../../sass/custom.scss */
+.btn.btn-dark:hover {
+  background: #2c3e50;
+}
+/* line 779, ../../sass/custom.scss */
+>>>>>>> origin/master
 .btn.btn-info {
   background: #3498db;
   box-shadow: 0 2px #2980b9;
 }
+<<<<<<< HEAD
 /* line 845, ../../sass/custom.scss */
+=======
+/* line 782, ../../sass/custom.scss */
+>>>>>>> origin/master
 .btn.btn-info:hover {
   background: #2980b9;
 }
 
+<<<<<<< HEAD
 /* line 851, ../../sass/custom.scss */
+=======
+/* line 788, ../../sass/custom.scss */
+>>>>>>> origin/master
 .btn-outline {
   color: #FFF;
   padding: 12px 20px;
@@ -965,57 +1408,93 @@ h1 .btn, h2 .btn, h3 .btn, h4 .btn, p .btn {
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
 }
+<<<<<<< HEAD
 /* line 866, ../../sass/custom.scss */
+=======
+/* line 803, ../../sass/custom.scss */
+>>>>>>> origin/master
 .btn-outline:hover {
   text-decoration: none;
   color: #ffffff;
 }
 
+<<<<<<< HEAD
 /* line 872, ../../sass/custom.scss */
+=======
+/* line 809, ../../sass/custom.scss */
+>>>>>>> origin/master
 .btn-outline-sm {
   padding: 5px 13px;
   font-size: 13px;
 }
 
+<<<<<<< HEAD
 /* line 877, ../../sass/custom.scss */
+=======
+/* line 814, ../../sass/custom.scss */
+>>>>>>> origin/master
 .btn-outline-lg {
   padding: 14px 26px;
   font-size: 15px;
 }
 
+<<<<<<< HEAD
 /* line 882, ../../sass/custom.scss */
+=======
+/* line 819, ../../sass/custom.scss */
+>>>>>>> origin/master
 .btn-outline-xl {
   padding: 18px 30px;
   font-size: 24px;
 }
 
+<<<<<<< HEAD
 /* line 887, ../../sass/custom.scss */
+=======
+/* line 824, ../../sass/custom.scss */
+>>>>>>> origin/master
 .btn-outline.outline-light, .icon.outline-light {
   color: #ffffff;
   background: none;
   border: 2px solid #ffffff;
 }
 
+<<<<<<< HEAD
 /* line 893, ../../sass/custom.scss */
+=======
+/* line 830, ../../sass/custom.scss */
+>>>>>>> origin/master
 .btn-outline.outline-light:hover, .icon.outline-light:hover {
   color: #2c3e50;
   background: #ffffff;
 }
 
+<<<<<<< HEAD
 /* line 898, ../../sass/custom.scss */
+=======
+/* line 835, ../../sass/custom.scss */
+>>>>>>> origin/master
 .btn-outline.outline-dark, .icon.outline-dark {
   color: #2c3e50;
   background: none;
   border: 2px solid #2c3e50;
 }
 
+<<<<<<< HEAD
 /* line 904, ../../sass/custom.scss */
+=======
+/* line 841, ../../sass/custom.scss */
+>>>>>>> origin/master
 .btn-outline.outline-dark:hover, .icon.outline-dark:hover {
   color: #ffffff;
   background: #2c3e50;
 }
 
+<<<<<<< HEAD
 /* line 909, ../../sass/custom.scss */
+=======
+/* line 846, ../../sass/custom.scss */
+>>>>>>> origin/master
 button:hover {
   text-decoration: none;
   -moz-transition: all 0.3s ease;
@@ -1025,16 +1504,28 @@ button:hover {
 }
 
 /* TABS */
+<<<<<<< HEAD
 /* line 918, ../../sass/custom.scss */
 .nav-tabs {
   margin: 0 auto;
 }
 /* line 919, ../../sass/custom.scss */
+=======
+/* line 855, ../../sass/custom.scss */
+.nav-tabs {
+  margin: 0 auto;
+}
+/* line 856, ../../sass/custom.scss */
+>>>>>>> origin/master
 .nav-tabs.nav-append-content {
   border-bottom: none;
   margin-bottom: 0;
 }
+<<<<<<< HEAD
 /* line 924, ../../sass/custom.scss */
+=======
+/* line 861, ../../sass/custom.scss */
+>>>>>>> origin/master
 .nav-tabs > li {
   z-index: 2;
   float: none;
@@ -1043,25 +1534,41 @@ button:hover {
   position: relative;
 }
 
+<<<<<<< HEAD
 /* line 934, ../../sass/custom.scss */
+=======
+/* line 871, ../../sass/custom.scss */
+>>>>>>> origin/master
 .nav > li > a:hover, .nav > li > a:focus {
   outline: 0;
 }
 
+<<<<<<< HEAD
 /* line 940, ../../sass/custom.scss */
+=======
+/* line 877, ../../sass/custom.scss */
+>>>>>>> origin/master
 .nav-tabs > li > a:hover, .nav-tabs > li > a:focus {
   outline: none;
   color: #1abc9c;
 }
 
+<<<<<<< HEAD
 /* line 946, ../../sass/custom.scss */
+=======
+/* line 883, ../../sass/custom.scss */
+>>>>>>> origin/master
 body .nav-tabs > li > a {
   padding: 13px 26px 14px !important;
   color: #3D566E;
   text-transform: uppercase;
 }
 
+<<<<<<< HEAD
 /* line 953, ../../sass/custom.scss */
+=======
+/* line 890, ../../sass/custom.scss */
+>>>>>>> origin/master
 .nav-tabs > li > a {
   padding: 16px 25px 12px;
   font-size: 14px;
@@ -1083,13 +1590,21 @@ body .nav-tabs > li > a {
   -webkit-transition: none;
   transition: none;
 }
+<<<<<<< HEAD
 /* line 974, ../../sass/custom.scss */
+=======
+/* line 911, ../../sass/custom.scss */
+>>>>>>> origin/master
 .nav-tabs .nav-link.active {
   background: transparent;
   border-bottom: 4px solid #1abc9c !important;
   color: #1abc9c;
 }
+<<<<<<< HEAD
 /* line 978, ../../sass/custom.scss */
+=======
+/* line 915, ../../sass/custom.scss */
+>>>>>>> origin/master
 .nav-tabs .nav-link.active:focus {
   color: #1abc9c;
 }
@@ -1101,7 +1616,11 @@ body .nav-tabs > li > a {
   font-weight: normal;
   font-style: normal;
 }
+<<<<<<< HEAD
 /* line 994, ../../sass/custom.scss */
+=======
+/* line 931, ../../sass/custom.scss */
+>>>>>>> origin/master
 [data-icon]:before {
   font-family: 'Flat-UI-Icons';
   content: attr(data-icon);
@@ -1112,7 +1631,11 @@ body .nav-tabs > li > a {
   -webkit-font-smoothing: antialiased;
 }
 
+<<<<<<< HEAD
 /* line 1004, ../../sass/custom.scss */
+=======
+/* line 941, ../../sass/custom.scss */
+>>>>>>> origin/master
 .fui-checkbox-unchecked, .fui-checkbox-checked, .fui-mail {
   display: inline-block;
   font-family: 'Flat-UI-Icons';
@@ -1124,29 +1647,49 @@ body .nav-tabs > li > a {
   -webkit-font-smoothing: antialiased;
 }
 
+<<<<<<< HEAD
 /* line 1015, ../../sass/custom.scss */
+=======
+/* line 952, ../../sass/custom.scss */
+>>>>>>> origin/master
 .fui-mail:before {
   content: "\e01e";
 }
 
+<<<<<<< HEAD
 /* line 1019, ../../sass/custom.scss */
+=======
+/* line 956, ../../sass/custom.scss */
+>>>>>>> origin/master
 .fui-checkbox-unchecked:before {
   content: "\e033";
 }
 
+<<<<<<< HEAD
 /* line 1023, ../../sass/custom.scss */
+=======
+/* line 960, ../../sass/custom.scss */
+>>>>>>> origin/master
 .fui-checkbox-checked:before {
   content: "\e034";
 }
 
+<<<<<<< HEAD
 /* line 1028, ../../sass/custom.scss */
+=======
+/* line 965, ../../sass/custom.scss */
+>>>>>>> origin/master
 .form-horizontal .control-label, .form-horizontal .radio, .form-horizontal .checkbox, .form-horizontal .radio-inline, .form-horizontal .checkbox-inline {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 6px;
 }
 
+<<<<<<< HEAD
 /* line 1035, ../../sass/custom.scss */
+=======
+/* line 972, ../../sass/custom.scss */
+>>>>>>> origin/master
 .checkbox, .radio {
   margin-bottom: 12px;
   padding-left: 32px;
@@ -1157,13 +1700,21 @@ body .nav-tabs > li > a {
   line-height: 1.5;
 }
 
+<<<<<<< HEAD
 /* line 1045, ../../sass/custom.scss */
+=======
+/* line 982, ../../sass/custom.scss */
+>>>>>>> origin/master
 .checkbox input, .radio input {
   outline: none !important;
   display: none;
 }
 
+<<<<<<< HEAD
 /* line 1050, ../../sass/custom.scss */
+=======
+/* line 987, ../../sass/custom.scss */
+>>>>>>> origin/master
 .checkbox .icons, .radio .icons {
   color: #bdc3c7;
   display: block;
@@ -1180,7 +1731,11 @@ body .nav-tabs > li > a {
   transition: color 0.25s linear;
 }
 
+<<<<<<< HEAD
 /* line 1066, ../../sass/custom.scss */
+=======
+/* line 1003, ../../sass/custom.scss */
+>>>>>>> origin/master
 .checkbox .icons .first-icon, .radio .icons .first-icon, .checkbox .icons .second-icon, .radio .icons .second-icon {
   display: inline-table;
   position: absolute;
@@ -1192,42 +1747,70 @@ body .nav-tabs > li > a {
   filter: alpha(opacity=100);
 }
 
+<<<<<<< HEAD
 /* line 1077, ../../sass/custom.scss */
+=======
+/* line 1014, ../../sass/custom.scss */
+>>>>>>> origin/master
 .checkbox .icons .second-icon, .radio .icons .second-icon {
   opacity: 0;
   filter: alpha(opacity=0);
 }
 
+<<<<<<< HEAD
 /* line 1082, ../../sass/custom.scss */
+=======
+/* line 1019, ../../sass/custom.scss */
+>>>>>>> origin/master
 .checkbox:hover, .radio:hover {
   -webkit-transition: color 0.25s linear;
   transition: color 0.25s linear;
 }
 
+<<<<<<< HEAD
 /* line 1087, ../../sass/custom.scss */
+=======
+/* line 1024, ../../sass/custom.scss */
+>>>>>>> origin/master
 .checkbox:hover .first-icon, .radio:hover .first-icon {
   opacity: 0;
   filter: alpha(opacity=0);
 }
 
+<<<<<<< HEAD
 /* line 1092, ../../sass/custom.scss */
+=======
+/* line 1029, ../../sass/custom.scss */
+>>>>>>> origin/master
 .checkbox:hover .second-icon, .radio:hover .second-icon {
   opacity: 1;
   filter: alpha(opacity=100);
 }
 
+<<<<<<< HEAD
 /* line 1097, ../../sass/custom.scss */
+=======
+/* line 1034, ../../sass/custom.scss */
+>>>>>>> origin/master
 .checkbox.checked, .radio.checked {
   color: #1abc9c;
 }
 
+<<<<<<< HEAD
 /* line 1101, ../../sass/custom.scss */
+=======
+/* line 1038, ../../sass/custom.scss */
+>>>>>>> origin/master
 .checkbox.checked .first-icon, .radio.checked .first-icon {
   opacity: 0;
   filter: alpha(opacity=0);
 }
 
+<<<<<<< HEAD
 /* line 1106, ../../sass/custom.scss */
+=======
+/* line 1043, ../../sass/custom.scss */
+>>>>>>> origin/master
 .checkbox.checked .second-icon, .radio.checked .second-icon {
   opacity: 1;
   filter: alpha(opacity=100);
@@ -1236,92 +1819,160 @@ body .nav-tabs > li > a {
   transition: color 0.25s linear;
 }
 
+<<<<<<< HEAD
 /* line 1114, ../../sass/custom.scss */
+=======
+/* line 1051, ../../sass/custom.scss */
+>>>>>>> origin/master
 .checkbox.disabled, .radio.disabled {
   cursor: default;
   color: #e6e8ea;
 }
 
+<<<<<<< HEAD
 /* line 1119, ../../sass/custom.scss */
+=======
+/* line 1056, ../../sass/custom.scss */
+>>>>>>> origin/master
 .checkbox.disabled .icons, .radio.disabled .icons {
   color: #e6e8ea;
 }
 
+<<<<<<< HEAD
 /* line 1123, ../../sass/custom.scss */
+=======
+/* line 1060, ../../sass/custom.scss */
+>>>>>>> origin/master
 .checkbox.disabled .first-icon, .radio.disabled .first-icon {
   opacity: 1;
   filter: alpha(opacity=100);
 }
 
+<<<<<<< HEAD
 /* line 1128, ../../sass/custom.scss */
+=======
+/* line 1065, ../../sass/custom.scss */
+>>>>>>> origin/master
 .checkbox.disabled .second-icon, .radio.disabled .second-icon {
   opacity: 0;
   filter: alpha(opacity=0);
 }
 
+<<<<<<< HEAD
 /* line 1133, ../../sass/custom.scss */
+=======
+/* line 1070, ../../sass/custom.scss */
+>>>>>>> origin/master
 .checkbox.disabled.checked .icons, .radio.disabled.checked .icons {
   color: #e6e8ea;
 }
 
+<<<<<<< HEAD
 /* line 1137, ../../sass/custom.scss */
+=======
+/* line 1074, ../../sass/custom.scss */
+>>>>>>> origin/master
 .checkbox.disabled.checked .first-icon, .radio.disabled.checked .first-icon {
   opacity: 0;
   filter: alpha(opacity=0);
 }
 
+<<<<<<< HEAD
 /* line 1142, ../../sass/custom.scss */
+=======
+/* line 1079, ../../sass/custom.scss */
+>>>>>>> origin/master
 .checkbox.disabled.checked .second-icon, .radio.disabled.checked .second-icon {
   opacity: 1;
   filter: alpha(opacity=100);
   color: #e6e8ea;
 }
 
+<<<<<<< HEAD
 /* line 1148, ../../sass/custom.scss */
+=======
+/* line 1085, ../../sass/custom.scss */
+>>>>>>> origin/master
 .checkbox.primary .icons, .radio.primary .icons {
   color: #34495e;
 }
 
+<<<<<<< HEAD
 /* line 1152, ../../sass/custom.scss */
+=======
+/* line 1089, ../../sass/custom.scss */
+>>>>>>> origin/master
 .checkbox.primary.checked, .radio.primary.checked, .checkbox.primary.checked .icons, .radio.primary.checked .icons {
   color: #1abc9c;
 }
 
+<<<<<<< HEAD
 /* line 1156, ../../sass/custom.scss */
+=======
+/* line 1093, ../../sass/custom.scss */
+>>>>>>> origin/master
 .checkbox.primary.disabled, .radio.primary.disabled {
   cursor: default;
   color: #bdc3c7;
 }
 
+<<<<<<< HEAD
 /* line 1161, ../../sass/custom.scss */
+=======
+/* line 1098, ../../sass/custom.scss */
+>>>>>>> origin/master
 .checkbox.primary.disabled .icons, .radio.primary.disabled .icons, .checkbox.primary.disabled.checked .icons {
   color: #bdc3c7;
 }
 
+<<<<<<< HEAD
 /* line 1166, ../../sass/custom.scss */
 .radio.primary.disabled.checked .icons {
   color: #bdc3c7;
 }
 /* line 1169, ../../sass/custom.scss */
+=======
+/* line 1103, ../../sass/custom.scss */
+.radio.primary.disabled.checked .icons {
+  color: #bdc3c7;
+}
+/* line 1106, ../../sass/custom.scss */
+>>>>>>> origin/master
 .radio + .radio {
   margin-top: 10px;
 }
 
+<<<<<<< HEAD
 /* line 1174, ../../sass/custom.scss */
+=======
+/* line 1111, ../../sass/custom.scss */
+>>>>>>> origin/master
 .checkbox + .checkbox {
   margin-top: 10px;
 }
 
+<<<<<<< HEAD
 /* line 1179, ../../sass/custom.scss */
 .table .checkbox, .table .radio {
   margin: 0 0 0 -9px;
 }
 /* line 1182, ../../sass/custom.scss */
+=======
+/* line 1116, ../../sass/custom.scss */
+.table .checkbox, .table .radio {
+  margin: 0 0 0 -9px;
+}
+/* line 1119, ../../sass/custom.scss */
+>>>>>>> origin/master
 .table .checkbox.no-label, .table .radio.no-label {
   padding-left: 0;
 }
 
+<<<<<<< HEAD
 /* line 1187, ../../sass/custom.scss */
+=======
+/* line 1124, ../../sass/custom.scss */
+>>>>>>> origin/master
 .chart {
   display: inline-block;
   margin-right: 0;
